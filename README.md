@@ -14,4 +14,5 @@ I think it would make less sense if I simply count the number of occurence of th
 
 However, there are also shortfalls to a simple algorithm. For instance, sometimes a search query will include strings that are highly related to
 a particular course, but those strings do not show up directly in the title or description. In those cases, the API will not be able to detect those
-relevant courses.
+relevant courses. Moreover, using the current algorithm, courses with longer titles and descriptions will tend to have a higher relevancy score compared to 
+those with shorter ones, regardless of the query.
